@@ -1,0 +1,45 @@
+{% extends "web_app/base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="container">
+    <div class="row justify-content-around row-container">
+        <div class="col-3">
+            <h2 class="plot-title">SELECT BATCH</h2>
+        </div>
+        <div class="col-6">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Temp Batch 1</option>
+                <option value="Last Week">Temp Batch 2</option>
+                <option value="Last Month">Temp Batch 3</option>
+                <option value="Last 3 Months">Temp Batch 4</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-container">
+        <div class="col-3">
+            <h2 class="plot-title">SELECT BARREL</h2>
+        </div>
+        <div class="col-6">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Temp Barrel 1</option>
+                <option value="Last Week">Temp Barrel 2</option>
+                <option value="Last Month">Temp Barrel 3</option>
+                <option value="Last 3 Months">All</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-container">
+            <button type="button" class="btn btn-light btn-changes">ADD BARREL/BATCH TO PROFILE</button>
+    </div>
+    <div class="row justify-content-around row-container">
+            <button type="button" class="btn btn-light btn-changes">REMOVE BARREL/BATCH FROM PROFILE</button>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

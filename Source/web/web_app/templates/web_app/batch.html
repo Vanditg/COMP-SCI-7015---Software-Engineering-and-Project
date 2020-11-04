@@ -1,0 +1,109 @@
+{% extends "web_app/base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="container row-container">
+    <div class="row justify-content-around">
+        <div class="col-3">
+            <h2 class="plot-title">SELECT BATCH</h2>
+        </div>
+        <div class="col-6">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Batch1">Temp Batch 1</option>
+                <option value="Batch2">Temp Batch 1</option>
+                <option value="Batch3">Temp Batch 1</option>
+                <option value="Batch4">Temp Batch 1</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="container row-container">
+    <div class="row justify-content-around">
+        <div class="col-3">
+            <h2 class="plot-title">STATUS</h2>
+        </div>
+        <div class="col-6">
+            <h2 class="plot-title">CHANGES</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-3 plot-title">
+            <h6 class="plot-title">MEASURE</h6>
+        </div>
+        <div class="col-6">
+            <h6 class="plot-title">TIME PERIOD</h6>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-spacer">
+        <div class="col-3 plot-title">
+            <button type="button" class="btn btn-light btn-changes">FERMENTATION</button>
+            <button type="button" class="btn btn-light btn-changes">ACID</button>
+        </div>
+        <div class="col-6">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Last Day</option>
+                <option value="Last Week">Last Week</option>
+                <option value="Last Month">Last Month</option>
+                <option value="Last 3 Months">Last 3 Months</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-3 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/status.png">
+        </div>
+        <div class="col-6 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/changes.png">
+        </div>
+    </div>
+</div>
+
+<div class="container row-container">
+    <div class="row justify-content-around">
+        <div class="col-12 row-spacer">
+            <h2 class="plot-title">FERMENTATION TRACKING</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-5 plot-title">
+            <h4 class="plot-title">SELECTED FEATURE</h4>
+        </div>
+        <div class="col-4">
+            <h4 class="plot-title">TIME PERIOD</h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-spacer">
+        <div class="col-5">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Fermentation (%)</option>
+                <option value="Last Week">PH</option>
+                <option value="Last Month">Lactic Acid</option>
+                <option value="Last 3 Months">Alcohol (%)</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Last Day</option>
+                <option value="Last Week">Last Week</option>
+                <option value="Last Month">Last Month</option>
+                <option value="Last 3 Months">Last 3 Months</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-12 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/graph.png">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

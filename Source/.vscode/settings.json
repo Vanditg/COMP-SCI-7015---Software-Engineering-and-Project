@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:rtmst1}/web/db.sqlite3",
+            "driver": "SQLite",
+            "name": "web_sqllite",
+            "previewLimit": 50
+        }
+    ]
+}

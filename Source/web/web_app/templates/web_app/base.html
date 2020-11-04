@@ -1,0 +1,100 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>{{title}}</title>
+    <link rel="shortcut icon" href="{% static 'logo.png' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita Swashed">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styles.css' %}" >
+    {% block styles %}
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="" style="font-family: 'Sansita Swashed', serif;font-size: xx-large">
+        <img class="img-responsive" src="/static/logo.png", height="40">
+        Vinotech
+      </a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <span class="menutitle nav-link ">
+              Menu
+            </span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Homepage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/batchanalysis">
+              Batch Analysis
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/barrelanalysis">
+              Barrel Analysis
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/managebatches">
+              Manage Batches
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/account">
+              Manage Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signout">
+              Sign Out
+            </a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="/signin">
+              Sign In
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <h1 align="center" class="pagetitle">{{ title }}</h1>
+      {% block main %}
+      {% endblock %}
+    </main>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.min.js"><\/script>');
+</script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="{% static "script.js" %}"></script>
+{% block scripts %}
+{% endblock %}
+</body>
+</html>

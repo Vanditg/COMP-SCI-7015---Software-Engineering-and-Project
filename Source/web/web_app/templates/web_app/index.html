@@ -1,0 +1,76 @@
+{% extends "web_app/base.html" %}
+{% load static %}
+
+{% block main %}
+<div class="container row-container">
+    <div class="row justify-content-around">
+        <div class="col-12">
+            <h2 align='center' class="plot-title">BARREL STATUS</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-3 ">
+            <h4 align='center' class="plot-title">BAD</h4>
+        </div>
+        <div class="col-3">
+            <h4 align='center' class="plot-title">MEDIUM</h4>
+        </div>
+        <div class="col-3">
+            <h4 align='center' class="plot-title">GOOD</h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-3 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/bad.png">
+        </div>
+        <div class="col-3 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/medium.png">
+        </div>
+        <div class="col-3 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/good.png">
+        </div>
+    </div>
+</div>
+<div class="container row-container">
+    <div class="row justify-content-around">
+        <div class="col-12 plot-title">
+            <h2 class="plot-title">CHANGES</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-spacer">
+        <div class="col-4 plot-title">
+            <h4 style="display: inline; padding-right: 10px">GROUPING</h4>
+        </div>
+        <div class="col-5 plot-title">
+            <h4 style="display: inline; padding-right: 10px">TIME PERIOD</h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-around row-spacer">
+        <div class="col-4 plot-title">
+            <button type="button" class="btn btn-light btn-changes">BARRELS</button>
+            <button type="button" class="btn btn-light btn-changes">BATCHES</button>
+        </div>
+        <div class="col-5">
+            <select class="form-control form-control-lg select-drop">
+                <option value="Last Day">Last Day</option>
+                <option value="Last Week">Last Week</option>
+                <option value="Last Month">Last Month</option>
+                <option value="Last 3 Months">Last 3 Months</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-10 plot-container">
+            <img class="img-fluid tempimg" src="/static/.temp/leaderboard.png">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

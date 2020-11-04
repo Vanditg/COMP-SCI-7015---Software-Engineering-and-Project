@@ -1,0 +1,168 @@
+body {
+    font-size: .875rem;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #150d4f;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #e8dffb;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    background-color: darkslateblue;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    color: darkmagenta;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+* Other
+*/
+
+.pagetitle {
+    font-family: 'Sansita Swashed', serif;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar .menutitle {
+    color: #ffffff;
+    font-size: xx-large;
+    padding-top: 20px;
+}
+
+.menutitle:hover {
+    background-color: inherit;
+}
+
+.plot-container {
+    background-color: darkslateblue;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.tempimg {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.plot-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.right-plot-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+    display: block;
+    text-align: right;
+}
+
+.btn-changes {
+    margin-bottom: 13px;
+    font-family: Roboto, sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.btn-changes:focus {
+    color: white;
+    background-color: #404040;
+}
+
+.select-drop {
+    height: 100%;
+    position: relative;
+}
+
+.row-container {
+    margin-bottom: 30px;
+}
+
+.row-spacer {
+    margin-bottom: 20px;
+}
