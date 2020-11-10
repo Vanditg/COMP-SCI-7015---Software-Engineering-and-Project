@@ -18,3 +18,6 @@ This repository contains report and product solutions for one of my postgraduate
 
 ## Easy Navigation for Final Report.  
 [Final Report RTMST1 - Vandit Gajjar](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Report/final-report_RTMST1_1779153.pdf)  
+
+## Lecture Slides and Videos  
+Please send a request [Here](https://shorturl.at/lqV48)  
