@@ -11,13 +11,13 @@ This repository contains report and product solutions for one of my postgraduate
 [Sprint_Retrospective_4](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Sprint_Retrospective/Reports/retrospective4_RTMST1_1779153.pdf) <<<--->>> [Feedback](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Sprint_Retrospective/Feedback/annotated-retrospective4_RTMST1_1779153.pdf) -->> Marks: 88/100  
 
 ## Easy Navigation for the Final Presentation.  
-[Final Presentation](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Presentation/Real_Time_Wine_Sensing_Tool.pdf)  
+[Final Presentation](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Presentation/Real_Time_Wine_Sensing_Tool.pdf)  -->> Marks: 91/100  
 
 ## Easy Navigation for the Source Code.  
 [Real_Time_Wine_Sensing_Tool_Source](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/tree/master/Source)  
 
 ## Easy Navigation for Final Report.  
-[Final Report RTMST1 - Vandit Gajjar](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Report/final-report_RTMST1_1779153.pdf)  
+[Final Report RTMST1 - Vandit Gajjar](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Report/Report/RTMST1_1779153.pdf) <<<--->>> [Feedback](https://github.com/Vanditg/COMP-SCI-7015---Software-Engineering-and-Project/blob/master/Final_Report/Report/Feedback_RTMST1_1779153RTMST1_1779153.pdf)  -->> Marks: 91.2/100  
 
 ## Lecture Slides and Videos  
 Please send a request [Here](https://shorturl.at/lqV48)  
